@@ -12,9 +12,7 @@ driver = webdriver.Chrome()
 load_dotenv()
 
 # Setup
-for i in range(1):
-    print('Digite a Palavra-Chave 1 para busca: ')
-    input("Press Enter to continue...")
+keyword1 = input('Digite o primeiro termo de busca: ')
 
 catolicaLoginUrl = 'https://portal.catolicasc.org.br/FrameHTML/web/app/edu/PortalEducacional/login/'
 login = os.getenv('CATOLICA_LOGIN')
